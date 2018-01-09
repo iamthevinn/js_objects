@@ -2,6 +2,8 @@
 
 // Challenge 1
 
+console.log("Challenge 1");
+
 /*
 Name: Remy, Cohort: Jan
 Name: Genevieve, Cohort: March
@@ -24,7 +26,11 @@ for(let key in students) {
     console.log("Name: " + students[key].name + ", Cohort: " + students[key].cohort);
 }
 
+console.log();
+
 // Challenge 2
+
+console.log("Challenge 2");
 
 /*
 EMPLOYEES
@@ -49,5 +55,13 @@ let users = {
        {'first_name' : 'Gordon', 'last_name' : 'Poe'}
     ]
  };
+ for(let userType in users) {
+    console.log(userType.toUpperCase());
+    for (let i = 0; i < users[userType].length; i++) {
+        let first_and_last = users[userType][i].last_name.toUpperCase() + users[userType][i].first_name.toUpperCase();
+        console.log(i+1 + " - " + users[userType][i].last_name.toUpperCase() + ", " + users[userType][i].first_name.toUpperCase() + " - " + first_and_last.length);
+     } 
+}
 
+console.log();
 
